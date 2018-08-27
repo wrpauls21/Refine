@@ -1,6 +1,6 @@
-setwd("C:/Users/wrpauls21/Desktop/Springboard")
+setwd("C:/Users/wrpauls21/Desktop/Springboard/Refine")
 library(readr)
-refine_original <- read_csv("C:/Users/wrpauls21/Desktop/Springboard/refine_original.csv")
+refine_original <- read_csv("C:/Users/wrpauls21/Desktop/Springboard/Refine/refine_original.csv")
 library(dplyr)
 refine_original$company[1:6] <- "phillips"
 refine_original$company[7:13] <- "akzo"
@@ -11,6 +11,7 @@ library(tidyr)
 refine_original <- separate(refine_original, col = 2, into = c("product_code" , "product_number"), sep = "-")
 refine_original$product_category <- NA
 refine_original <- unite(refine_original, col = "full_address", 4:6, sep = ", ")
+
 filter(refine_original, product_code == "p") 
 filter(refine_original, product_code == "v") 
 filter(refine_original, product_code == "x") 
