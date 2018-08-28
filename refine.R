@@ -70,6 +70,6 @@ refine$product_tablet[refine$product_category=="Tablet"] <- 1
 
 # saved clean data set to csv file
 write.csv(refine,'refine_clean.csv')
-
+ 
 
 
