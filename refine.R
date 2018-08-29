@@ -1,12 +1,9 @@
 # Will Pauls Springboard project
 # Project: Data Wrangling Exercise 1: Basic Data Manipulation
 
-# set working directory
-setwd("C:/Users/wrpauls21/Desktop/Springboard/Refine")
-
 # Read in Data set refine_original
 library(readr)
-refine <- read_csv("C:/Users/wrpauls21/Desktop/Springboard/Refine/refine_original.csv")
+refine <- read_csv("refine_original.csv")
 View(refine)
 
 # load libraries being used
